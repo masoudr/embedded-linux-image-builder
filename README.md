@@ -3,6 +3,7 @@
 ![embedded-linux-image-builder](./images/embedded.png)
 
 This project creates a fully customized embedded Linux image from source (like Linux From Scratch). You can use this project to fully customize your embedded Linux image like changing kernel configuration, creating new Linux distros, create an image for other board variants, etc. To use this project there is no need to set up any special environment or meet any requirements.
+I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux Kernel 4.19.94.
 
 ## Features
 
@@ -11,8 +12,8 @@ This project creates a fully customized embedded Linux image from source (like L
 * Build Bootloader (u-boot) from the source.
 * Can be combined with any Linux distro filesystem.
 * Create image file (.img) as output file for easy writing to SD card.
-* I've used BeagleBone Black as the target system.
-* I've tested the project with Ubuntu18.04 and Ti's official Linux Kernel 4.19.94.
+* High speed build with help of using Linaro toolchain and Docker engine.
+* Can be used with any Embedded Linux system with little configuration change.
 
 ## Requirements
 
