@@ -29,7 +29,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
     * [Ubuntu 18.04.3](https://rcn-ee.com/rootfs/eewiki/minfs/ubuntu-18.04.3-minimal-armhf-2020-02-10.tar.xz) used in this project.
   * As the compile process may take longer, you need to increase the Docker engine resources:
     * [Windows](https://docs.docker.com/docker-for-windows/#advanced#resources)
-    * [Mac](https://docs.docker.com/docker-for-mac/#memory#resources).
+    * [Mac](https://docs.docker.com/docker-for-mac/#memory#resources)
 
 ## How to use
 
@@ -48,7 +48,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 
 2. Make sure that you decompress the Linux rootfs to get the right compressed file. The files that contain all the Linux rootfs inside its root directory (e.g. `armhf-rootfs-ubuntu-bionic.tar`).
 3. Set the Dockerfile parameters in `docker-compose.yml`:
-   * `kernel_version`: kernel version you are using
+   * `kernel_version`: kernel version in X.Y.Z format
    * `kernel_filename`: kernel source file path
    * `kernel_defconfig`: kernel configuration file
    * `uboot_filename`: u-boot source file path
