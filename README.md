@@ -47,13 +47,13 @@ This project creates a fully customized embedded Linux image from source (like L
 
 2. Make sure that you decompress the Linux rootfs to get the right compressed file. The files that contain all the Linux rootfs inside its root directory (e.g. `armhf-rootfs-ubuntu-bionic.tar`).
 3. Set the Dockerfile parameters in `docker-compose.yml`:
-   * kernel_version: kernel version you are using
-   * kernel_filename: kernel source file path
-   * kernel_defconfig: kernel configuration file
-   * uboot_filename: u-boot source file path
-   * uboot_defconfig: u-boot configuration file
-   * rootfs_filename: Linux Root file system path
-   * linaro_filename: Linrao toolchain file path
+   * `kernel_version`: kernel version you are using
+   * `kernel_filename`: kernel source file path
+   * `kernel_defconfig`: kernel configuration file
+   * `uboot_filename`: u-boot source file path
+   * `uboot_defconfig`: u-boot configuration file
+   * `rootfs_filename`: Linux Root file system path
+   * `linaro_filename`: Linaro toolchain file path
 
 4. Bring up the console and navigate to project root directory and execute
 
