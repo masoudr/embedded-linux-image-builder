@@ -2,7 +2,7 @@
 
 ![embedded-linux-image-builder](./images/embedded.png)
 
-This project creates a fully customized embedded Linux image from source (like Linux From Scratch). You can use this project to fully customize your embedded Linux image like changing kernel configuration, creating new Linux distros, create an image for other board variants, etc. To use this project there is no need to set up any special environment or meet any requirements.
+This project creates a fully customized embedded Linux image from source (like Linux From Scratch). You can use this project to fully customize your embedded Linux image like changing kernel configuration, creating new Linux distros, create an image for other board variants, etc. To use this project there is no need to set up any special environment or meet any special requirements.
 I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux Kernel 4.19.94.
 
 ## Features
@@ -12,7 +12,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 * Build Bootloader (u-boot) from the source.
 * Can be combined with any Linux distro filesystem.
 * Create image file (.img) as output file for easy writing to SD card.
-* High speed build with help of using Linaro toolchain and Docker engine.
+* High-speed build with help of using Linaro toolchain and Docker engine.
 * Can be used with any Embedded Linux system with little configuration change.
 
 ## Requirements
@@ -20,7 +20,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 * [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
 * Download resource files and put them in `resources` directory:
   * Linaro cross compile toolchain.
-    * You can get the bianries from [here](https://www.linaro.org/downloads/).
+    * You can get the binaries from [here](https://www.linaro.org/downloads/).
   * Linux Kernel source for your board.
     * For BeagleBone Black you can use the official [kernel](https://github.com/beagleboard/linux)
   * u-boot [source code](https://github.com/u-boot/u-boot)).
