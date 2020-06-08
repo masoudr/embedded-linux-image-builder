@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     util-linux kpartx dosfstools e2fsprogs gddrescue qemu-utils
 
 # create directories
-RUN mkdir -p /lfs/output /lfs/kernel /lfs/u-boot /lfs/rootfs/boot /lfs/rootfs/rootfs /lfs/linaro
+RUN mkdir -p /lfs/output /lfs/kernel /lfs/u-boot /lfs/rootfs/boot /lfs/rootfs/rootfs /lfs/linaro /lfs/rootfs/rootfs/boot
 
 # copying neccessary files from host to container
 COPY ${kernel_filename} /lfs/kernel.tar.gz
@@ -59,5 +59,8 @@ RUN cp /lfs/kernel/arch/arm/boot/dts/am335x-boneblack.dtb /lfs/rootfs/rootfs/boo
 # change to output directory
 WORKDIR /lfs/output
 
-# create image file
+# copy image generator script and set permissions
 COPY ./image_generator.sh /lfs/image_generator.sh
+RUN ["chmod", "+x", "/lfs/image_generator.sh"]
+
+ENTRYPOINT [ "/lfs/image_generator.sh" ]

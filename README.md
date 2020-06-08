@@ -18,6 +18,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 ## Requirements
 
 * [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+* If you are using Windows make sure that use the latest [WSL 2](https://docs.docker.com/docker-for-windows/wsl/) backend as device-mapper kernel driver is missing in older WSL versions, otherwise you need to manually build the SD Card.
 * Download resource files and put them in `resources` directory:
   * Linaro cross compile toolchain.
     * You can get the binaries from [here](https://www.linaro.org/downloads/).
@@ -62,7 +63,9 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
    docker-compose up --build
    ```
 
-5. If the process complete successfully you should get the image file `sd_image.img` in the `output` directory.
+5. If the process complete successfully you should get the image file `sd_image.img` and `rootfs.tar.gz` in the `output` directory.
+
+6. You can write `sd_image.sd` directly to the SD Card or you can manually partitioning your SD and copy the contents of `rootfs.tar.gz` into the SD partitions.
 
 ## Credits
 
