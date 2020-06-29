@@ -8,9 +8,9 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 ## Features
 
 * Based on Docker so can be run on any machine without any requirements.
-* Build Kernel, DTS, modules, and headers from scratch.
+* Build Kernel, DTS, modules, and headers from source.
 * Build Bootloader (u-boot) from the source.
-* Can be combined with any Linux distro filesystem.
+* Can be combined with any Linux distributions.
 * Create image file (.img) as output file for easy writing to SD card.
 * High-speed build with help of using Linaro toolchain and Docker engine.
 * Can be used with any Embedded Linux system with little configuration change.
@@ -24,7 +24,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
     * You can get the binaries from [here](https://www.linaro.org/downloads/).
   * Linux Kernel source for your board.
     * For BeagleBone Black you can use the official [kernel](https://github.com/beagleboard/linux)
-  * u-boot [source code](https://github.com/u-boot/u-boot)).
+  * u-boot [source code](https://github.com/u-boot/u-boot).
   * A base rootfs Linux distro.
     * You can grab Ubuntu or Debian distro from [here](https://rcn-ee.com/rootfs/eewiki/minfs/).
     * [Ubuntu 18.04.3](https://rcn-ee.com/rootfs/eewiki/minfs/ubuntu-18.04.3-minimal-armhf-2020-02-10.tar.xz) used in this project.
