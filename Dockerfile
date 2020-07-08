@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 # create directories
 RUN mkdir -p /lfs/output /lfs/kernel /lfs/u-boot /lfs/rootfs/boot /lfs/rootfs/rootfs /lfs/linaro /lfs/rootfs/rootfs/boot
 
-# copying neccessary files from host to container
+# copying necessary files from host to container
 COPY ${kernel_filename} /lfs/kernel.tar.gz
 COPY ${uboot_filename} /lfs/u-boot.tar.gz
 COPY ${rootfs_filename} /lfs/rootfs.tar
@@ -56,7 +56,7 @@ RUN cp /lfs/u-boot/u-boot.img /lfs/rootfs/rootfs/boot/uboot
 RUN cp /lfs/kernel/arch/arm/boot/zImage /lfs/rootfs/rootfs/boot
 RUN cp /lfs/kernel/arch/arm/boot/dts/am335x-boneblack.dtb /lfs/rootfs/rootfs/boot
 
-# change to output directory
+# change to the output directory
 WORKDIR /lfs/output
 
 # copy image generator script and set permissions
