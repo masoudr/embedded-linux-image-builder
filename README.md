@@ -7,13 +7,13 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 
 ## Features
 
-* Based on Docker so can be run on any machine without any requirements.
-* Build Kernel, DTS, modules, and headers from the source.
-* Build Bootloader (u-boot) from the source.
-* Can be combined with any Linux distribution.
-* Create image file (.img) as output file for easy writing to SD card.
-* High-speed build with the help of using Linaro toolchain and Docker engine.
-* Can be used with any Embedded Linux system with little configuration change.
+* Based on Docker so can be run on any machine without any requirements
+* Build Kernel, DTS, modules, and headers from the source
+* Build Bootloader (u-boot) from the source
+* Can be combined with any Linux distribution
+* Create image file (.img) as output file for easy writing to SD card
+* High-speed build with the help of Linaro toolchain and Docker engine
+* Can be customized for any Embedded Linux system with the least configuration change
 
 ## Requirements
 
@@ -34,7 +34,7 @@ I've used BeagleBone Black as the target system with Ubuntu 18.04 and Ti's Linux
 
 ## How to use
 
-1. Make sure that you meet the requirements and put the necessary files into the `resources` directory:
+1. Make sure that you've met the requirements and have put the necessary files in the `resources` directory:
     * For example:
 
       ```bash
